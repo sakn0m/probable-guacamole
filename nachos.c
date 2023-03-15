@@ -1,17 +1,29 @@
 #include <stdio.h>
 
-int main() {
-    int num, i = 2;
-    printf("Inserisci un numero: ");
-    scanf("%d", &num);
-
-    while (i <= num / 2) {
-        if (num % i == 0) {
-            printf("%d non è un numero primo.\n", num);
-            return 0;
+int main() 
+{
+    
+    int i = 2;
+    int primo2 = 0;
+    int input;
+    
+    printf("Inserisci un numero da verificare: ");
+    scanf("%d", &input);
+   
+    while (i<input) 
+    {
+        if (input%i == 0)
+        {   
+            printf("%d non è primo\n", input);
+            primo2 = 1;
+            break;
         }
-        i++;
+        
+        i++; 
     }
-    printf("%d è un numero primo.\n", num);
-    return 0;
+    if (primo2 == 0) 
+    {
+        printf("%d è un numero primo\n", input);
+    }
+    
 }
