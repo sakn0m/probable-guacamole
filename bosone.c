@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main() 
+{
     char input[100]; // array per la stringa inserita dall'utente
     int i = 0; // indice per la stringa
 
